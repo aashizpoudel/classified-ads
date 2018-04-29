@@ -1,0 +1,98 @@
+/* ==========================================================================
+  color-dodger-blue.css
+   ========================================================================== */
+
+/** variation color code */
+
+a{
+   color: #1E8BC3;
+}
+a:hover{
+   color: #1E8BC3;
+}
+.section-header{
+   border-left: 2px solid #1E8BC3;
+}
+.ads-item-thumbnail .caption a{
+   color: #333333;
+}
+.ads-item-thumbnail .caption a:hover{
+   color: #1E8BC3;
+}
+
+.ads-item-thumbnail .social-icons{
+   border-top: 2px solid #1E8BC3;
+}
+.label-premium {
+   background-color: #1E8BC3;
+}
+.label-new {
+   background-color: #e87e04;
+}
+.theme-btn{
+   background-color: #1E8BC3;
+}
+.theme-btn:hover{
+   background: #2980b9;
+   color: #ffffff;
+}
+.footer{
+   border-top: 2px solid #1E8BC3;
+}
+.footer-widget h4{
+   border-bottom: 2px solid #1E8BC3;
+}
+.price-title h2{
+   color: #1E8BC3;
+}
+/** End variation color code */
+
+/** Common for all theme */
+.green i{
+   color: #26C281;
+}
+.green hr{
+   border-color: #26C281;
+}
+.gold i{
+   color: #E87E04;
+}
+.gold hr{
+   border-color: #E87E04;
+}
+.purple i{
+   color: #1F3A93;
+}
+.purple hr{
+   border-color: #1F3A93;
+}
+.orange i{
+   color: #F64747;
+}
+.orange hr{
+   border-color: #F64747;
+}
+.brick i{
+   color: #96281B;
+}
+.brick hr{
+   border-color: #96281B;
+}
+.blue i{
+   color: #4B77BE;
+}
+.blue hr{
+   border-color: #4B77BE;
+}
+.honey i{
+   color: #34495e;
+}
+.honey hr{
+   border-color: #34495e;
+}
+
+.ads-detail, .sidebar-widget, div.login, div.sidebar-filter-wrapper, div.listing-nav, div.listingTopFilterBar{
+   border-top: 2px solid #1E8BC3;
+}
+
+/** End Common for all theme */

@@ -1,0 +1,622 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Themeqx Classified CMS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <!-- Font awesome 4.4.0 -->
+    <link rel="stylesheet" href="assets/font-awesome-4.4.0/css/font-awesome.min.css">
+    <!-- main select2.css -->
+    <link href="assets/select2-3.5.3/select2.css" rel="stylesheet" />
+    <link href="assets/select2-3.5.3/select2-bootstrap.css" rel="stylesheet" />
+    <!-- main style.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/color-dodger-blue.css">
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+<div class="header-nav-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 ">
+                <div class="topContactInfo">
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-phone"></i>
+                                +2 34 45 67 368
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                                info@example.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <form class="navbar-form navbar-right" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign in or Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">themeqx Classified</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html"> <i class="fa fa-lock"></i>  Login  </a>  </li>
+                <li><a href="#"> <i class="fa fa-save"></i> Register</a></li>
+                <li><a href="#"> <i class="fa fa-tag"></i> Post an Ad</a></li>
+                <li><a href="#"> <i class="fa fa-mail-forward"></i> Contact Us</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-3">
+
+            <div class="bg-white">
+                <div class="sidebar-filter-wrapper">
+
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="searchTerms">Search Keywords</label>
+                            <input type="text" class="form-control" id="searchTerms" placeholder="Search keywords">
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control select2">
+                                <option value="">Select a category</option>
+                                <optgroup label="Electronics">
+                                    <option value="AR">Argentina</option>
+                                    <option value="AM">Armenia</option>
+                                    <option value="AW">Aruba</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AT">Austria</option>
+                                </optgroup>
+
+                                <optgroup label="Property">
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BS">Bahamas</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbados</option>
+                                    <option value="BY">Belarus</option>
+                                    <option value="BE">Belgium</option>
+                                </optgroup>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control select2">
+                                <option value="">Select a country</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control select2">
+                                <option value=""> Select state</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                            </select>
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group">
+                            <label>Type of ad</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="type_of_ad" value="offered" /> Offered</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="type_of_ad" value="wanted_to_buy" /> Wanted - to buy</label>
+                            </div>
+
+                        </div>
+
+
+                        <hr />
+
+                        <div class="form-group">
+                            <label>Condition</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="condition" value="used" /> Used</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="condition" value="new" /> New </label>
+                            </div>
+
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group">
+                            <label>Price (Min-Max)</label>
+
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="number" class="form-control" placeholder="Min">
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="number" class="form-control" placeholder="Max">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group">
+                            <label>Short by</label>
+
+                            <select class="form-control select2">
+                                <option value="">Select short</option>
+                                <option value="priceAsc">Price : Low to High</option>
+                                <option value="priceDesc">Price : High to Low</option>
+                                <option value="newest">Newest</option>
+                                <option value="oldest">Oldest</option>
+                            </select>
+                        </div>
+
+
+                        <button type="submit" class="btn theme-btn"> <i class="fa fa-search"></i> Filter Ads</button>
+                    </form>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+
+
+        </div> <!-- col-sm-4 -->
+
+        <div class="col-sm-9">
+
+
+            <div class="listing-nav">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="nav">
+                            <li><a href="">All Ads (3434)</a> </li>
+                            <li><a href="">Personal (2345)</a> </li>
+                            <li><a href="">Business (876)</a> </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <ul class="nav list-grid-view">
+                            <li><a href=""><i class="fa fa-list"></i> </a> </li>
+                            <li><a href=""><i class="fa fa-th-large"></i></a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/camera.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-premium" data-toggle="tooltip" data-placement="top" title="Premium Ads"><i class="fa fa-star-o"></i> </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/drone.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-new" data-toggle="tooltip" data-placement="top" title="New"><i class="fa fa-rocket"></i> </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/forge.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-premium" data-toggle="tooltip" data-placement="top" title="Premium Ads"><i class="fa fa-star-o"></i> </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/smart-watch.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-premium" data-toggle="tooltip" data-placement="top" title="Premium Ads"><i class="fa fa-star-o"></i> </div>
+                        <div class="label-new" data-toggle="tooltip" data-placement="top" title="New"><i class="fa fa-rocket"></i> </div>
+                    </div>
+                </div>
+
+
+                <div class=" col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/camera-dslr.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-premium" data-toggle="tooltip" data-placement="top" title="Premium Ads"><i class="fa fa-star-o"></i> </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/wristwatch.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-new" data-toggle="tooltip" data-placement="top" title="New"><i class="fa fa-rocket"></i> </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/mobile.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-premium" data-toggle="tooltip" data-placement="top" title="Premium Ads"><i class="fa fa-star-o"></i> </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-4 col-sm-6 col-xs-12">
+                    <div class="ads-item-thumbnail bg-white">
+                        <div class="ads-thumbnail">
+                            <a href="#">
+                                <img src="assets/img/thumb/motorbike.jpg" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4>Thumbnail label</h4>
+                            <a class="price text-muted" href="#"> <i class="fa fa-folder-o"></i> Electronics </a>
+                            <a class="location text-muted" href="#"> <i class="fa fa-location-arrow"></i> New York </a>
+                            <p class="date-posted text-muted"> <i class="fa fa-clock-o"></i> 30 minutes ago </p>
+                            <p class="price"> $ 45.00 </p>
+                        </div>
+                        <div class="social-icons">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="label-premium" data-toggle="tooltip" data-placement="top" title="Premium Ads"><i class="fa fa-star-o"></i> </div>
+                        <div class="label-new" data-toggle="tooltip" data-placement="top" title="New"><i class="fa fa-rocket"></i> </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- col-sm-8 -->
+
+
+    </div> <!-- row -->
+
+</div>
+
+
+
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-widget">
+                        <h4>About Us</h4>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="footer-widget footer-address">
+                        <h4>Contact Us</h4>
+
+
+                        <address>
+                            <strong>Customer Company, Inc.</strong>
+                            <br> <i class="fa fa-location-arrow"></i>
+                            2/21 Barden Loop
+                            <br>
+                            Cupertino, CA 774636
+                            <br><i class="fa fa-phone"></i>
+                            <abbr title="Phone">P:</abbr>
+                            (123) 456-7890
+                        </address>
+                        <address>
+                            <strong>E-mail</strong>
+                            <br> <i class="fa fa-envelope-o"></i>
+                            <a href="mailto:#"> info@customer.com </a>
+                        </address>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-widget">
+                        <h4>Quick Link</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Online Help</a></li>
+                            <li><a href="#">Change Location</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="footer-widget footer-newslatter">
+                        <h4>Newslatter</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><i class="fa fa-arrow-circle-o-right"></i></button>
+      </span>
+                        </div><!-- /input-group -->
+                        <p class="newslatter-infp"> Get most recent updates from us.</p>
+
+                        <div class="social-icons">
+                            <ul class="social-ul">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="pull-left">Copyright &copy; 2015 mhCart Classifieds. All rights reserved.</p>
+                    <p class="pull-right"> A product of <a href="http://mhcode.com">mhCode</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/select2-3.5.3/select2.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
