@@ -47,7 +47,6 @@ class HomeController extends Controller
             'hostname' => 'required',
             'dbport' => 'required',
             'username' => 'required',
-            'password' => 'required',
             'database_name' => 'required',
             'envato_purchase_code' => 'required',
         ];
@@ -68,10 +67,14 @@ class HomeController extends Controller
         // }
 
         try{
-            $mysqli_link = mysqli_connect($request->hostname, $request->username, $request->password, $request->database_name);
+            $pass = "";
+            if($request->password){
+                $pass =$request->password ;
+            }
+            $mysqli_link = mysqli_connect($request->hostname, $request->username, $pass, $request->database_name);
 
             // Name of the file
-            $database = base_path('database-backup/classified_laravel_5_3.sql');
+            $database = base_path('database-backup/classified.sql');
             // Temporary variable, used to store current query
             $templine = '';
             // Read in entire file
@@ -97,6 +100,7 @@ class HomeController extends Controller
             $db_error .= "<p>Error: Unable to connect to Database. </p>";
             $db_error .= "<p>Debugging errno: " . mysqli_connect_errno() . "</p>";
             $db_error .= "<p>Debugging error: " . mysqli_connect_error() . "</p>";
+            $db_error .= "<p>Error:".$e->getMessage()."</p>";
             return ['success' => 0, 'msg' => $db_error];
         }
         mysqli_close($mysqli_link);
