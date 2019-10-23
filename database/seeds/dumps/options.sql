@@ -1,19 +1,4 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
-
-DROP TABLE IF EXISTS `options`;
-CREATE TABLE IF NOT EXISTS `options` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `option_key` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `option_value` text COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=102 ;
 
 --
 -- Dumping data for table `options`
@@ -22,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `options` (
 INSERT INTO `options` (`id`, `option_key`, `option_value`) VALUES
 (2, 'enable_paypal', '0'),
 (3, 'enable_stripe', '0'),
-(4, 'stripe_test_mode', '1'),
+(4, 'stripe_test_mode', '0'),
 (5, 'stripe_test_secret_key', 'sk_test_tJeAdA1KbhiYV8I8bfPmJcOL'),
 (6, 'stripe_test_publishable_key', 'pk_test_P3TFmKrvT7l29Zpyy1f4pwk8'),
 (7, 'stripe_live_secret_key', ''),
@@ -30,7 +15,7 @@ INSERT INTO `options` (`id`, `option_key`, `option_value`) VALUES
 (9, 'date_format', 'd/m/Y'),
 (10, 'default_timezone', 'Asia/Kathmandu'),
 (11, 'date_format_custom', 'd/m/Y'),
-(12, 'site_title', 'RamroBazar.com | A complete Buying Selling Portal'),
+(12, 'site_title', 'ZebroMart.com | A complete Buying Selling Portal'),
 (13, 'email_address', 'admin@demo.com'),
 (14, 'time_format', 'g:i A'),
 (15, 'time_format_custom', 'g:i A'),
@@ -78,25 +63,25 @@ INSERT INTO `options` (`id`, `option_key`, `option_value`) VALUES
 (58, 'site_email_address', 'info@customer.com '),
 (59, 'footer_about_us', 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'),
 (60, 'footer_about_us_read_more_text', '<a href="#">View details »</a>'),
-(61, 'google_map_embedded_code', '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.72357067242!2d90.27902569868164!3d23.780942445486914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka+1000-1200!5e0!3m2!1sen!2sbd!4v1472245590888" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'),
-(62, 'monetize_code_below_slider', '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\r\n                        <!-- TestCSP -->\r\n                        <ins class="adsbygoogle"\r\n                             style="display:block"\r\n                             data-ad-client="ca-pub-8618780985613063"\r\n                             data-ad-slot="5484345690"\r\n                             data-ad-format="auto"></ins>\r\n                        <script>\r\n                            (adsbygoogle = window.adsbygoogle || []).push({});\r\n                        </script>'),
+(61, 'google_map_embedded_code', ''),
+(62, 'monetize_code_below_slider', ''),
 (63, 'enable_monetize', '1'),
 (64, 'monetize_code_below_search_bar', ''),
-(65, 'monetize_code_below_categories', '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\r\n                        <!-- TestCSP -->\r\n                        <ins class="adsbygoogle"\r\n                             style="display:block"\r\n                             data-ad-client="ca-pub-8618780985613063"\r\n                             data-ad-slot="5484345690"\r\n                             data-ad-format="auto"></ins>\r\n                        <script>\r\n                            (adsbygoogle = window.adsbygoogle || []).push({});\r\n                        </script>'),
+(65, 'monetize_code_below_categories', ''),
 (66, 'monetize_code_below_premium_ads', ''),
 (67, 'monetize_code_below_regular_ads', ''),
 (68, 'monetize_code_listing_sidebar_top', ''),
-(69, 'monetize_code_listing_sidebar_bottom', '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\r\n                        <!-- TestCSP -->\r\n                        <ins class="adsbygoogle"\r\n                             style="display:block"\r\n                             data-ad-client="ca-pub-8618780985613063"\r\n                             data-ad-slot="5484345690"\r\n                             data-ad-format="auto"></ins>\r\n                        <script>\r\n                            (adsbygoogle = window.adsbygoogle || []).push({});\r\n                        </script>'),
+(69, 'monetize_code_listing_sidebar_bottom', ''),
 (70, 'monetize_code_listing_above_premium_ads', ''),
 (71, 'monetize_code_listing_above_regular_ads', ''),
-(72, 'monetize_code_below_ad_title', '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\r\n                        <!-- TestCSP -->\r\n                        <ins class="adsbygoogle"\r\n                             style="display:block"\r\n                             data-ad-client="ca-pub-8618780985613063"\r\n                             data-ad-slot="5484345690"\r\n                             data-ad-format="auto"></ins>\r\n                        <script>\r\n                            (adsbygoogle = window.adsbygoogle || []).push({});\r\n                        </script>'),
+(72, 'monetize_code_below_ad_title', ''),
 (73, 'monetize_code_below_ad_image', ''),
 (74, 'monetize_code_below_ad_description', ''),
-(75, 'monetize_code_above_general_info', '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\r\n                        <!-- TestCSP -->\r\n                        <ins class="adsbygoogle"\r\n                             style="display:block"\r\n                             data-ad-client="ca-pub-8618780985613063"\r\n                             data-ad-slot="5484345690"\r\n                             data-ad-format="auto"></ins>\r\n                        <script>\r\n                            (adsbygoogle = window.adsbygoogle || []).push({});\r\n                        </script>'),
+(75, 'monetize_code_above_general_info', ''),
 (76, 'monetize_code_below_general_info', ''),
 (77, 'monetize_code_above_seller_info', ''),
 (78, 'monetize_code_below_seller_info', ''),
-(79, 'monetize_code_listing_below_regular_ads', '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>\r\n                        <!-- TestCSP -->\r\n                        <ins class="adsbygoogle"\r\n                             style="display:block"\r\n                             data-ad-client="ca-pub-8618780985613063"\r\n                             data-ad-slot="5484345690"\r\n                             data-ad-format="auto"></ins>\r\n                        <script>\r\n                            (adsbygoogle = window.adsbygoogle || []).push({});\r\n                        </script>'),
+(79, 'monetize_code_listing_below_regular_ads', ''),
 (80, 'disqus_shortname', 'demo'),
 (81, 'enable_disqus_comment_in_blog', '1'),
 (82, 'show_blog_in_footer', '0'),

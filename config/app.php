@@ -163,7 +163,8 @@ return [
         //Form and html builder
         'Collective\Html\HtmlServiceProvider',
         Laravel\Socialite\SocialiteServiceProvider::class,
-        Yajra\Datatables\DatatablesServiceProvider::class
+        Yajra\Datatables\DatatablesServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class
     ],
 
     /*

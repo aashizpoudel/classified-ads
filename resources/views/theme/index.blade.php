@@ -50,9 +50,9 @@
             <div class="col-md-12">
 
 
-                @if($enable_monetize)
+                {{-- @if($enable_monetize)
                     {!! get_option('monetize_code_below_slider') !!}
-                @endif
+                @endif --}}
 
                 <div class="section-header bg-white my-5">
                     <div class="search-wrapper  d-inline-block mx-auto">
@@ -107,9 +107,9 @@
                     <div class="clearfix"></div>
                 </div>
 
-                @if($enable_monetize)
+                {{-- @if($enable_monetize)
                     {!! get_option('monetize_code_below_search_bar') !!}
-                @endif
+                @endif --}}
 
             </div>
         </div>
@@ -155,7 +155,7 @@
     </div>
 
 
-    @if($enable_monetize)
+    {{-- @if($enable_monetize)
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -163,7 +163,33 @@
                 </div>
             </div>
         </div>
-    @endif
+    @endif --}}
+    <style>
+        .m-auto{
+            margin-right:auto;
+            margin-left:auto;
+        }
+        </style>
+    <div class='container'>
+        <a class="btn btn-info">Submit Your listing</a>
+        <div class='row'>
+                <div class='col-md-6'>
+                    <div class="jumbotron">
+                        <h3>Please Wait!!</h3>
+                        <p>
+                                To submit your property, Are you ready with the followings?
+                        </p>
+                        <ol>
+                            <li> at least 4 photos of your property </li>
+                            <li> at least 1 legal document </li>
+                            <li> proof of payment if you are vip seller? </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class='col-md-6'></div>
+        </div>
+        </div>
+    </div>
 
 
     <div class="container">
@@ -218,7 +244,7 @@
     </div>
 
 
-    @if($enable_monetize)
+    {{-- @if($enable_monetize)
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -226,7 +252,7 @@
                 </div>
             </div>
         </div>
-    @endif
+    @endif --}}
 
 
     @if($regular_ads->count() > 0)
@@ -282,7 +308,7 @@
         </div>
     @endif
 
-    @if($enable_monetize)
+    {{-- @if($enable_monetize)
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -290,7 +316,7 @@
                 </div>
             </div>
         </div>
-    @endif
+    @endif --}}
     @if(get_option('show_latest_blog_in_homepage') ==1)
 
         <div class="container">

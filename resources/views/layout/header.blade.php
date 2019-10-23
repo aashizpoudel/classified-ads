@@ -160,11 +160,11 @@
 
             <ul class="nav navbar-nav navbar-right">
 
-                @if($header_menu_pages->count() > 0)
+                {{-- @if($header_menu_pages->count() > 0)
                     @foreach($header_menu_pages as $page)
                         <li><a href="{{ route('single_page', $page->slug) }}">{{ $page->title }} </a></li>
                     @endforeach
-                @endif
+                @endif --}}
 
                 @if( ! Auth::check())
                     <li><a href="{{ route('login') }}"> <i class="fa fa-lock"></i>  {{ trans('app.login') }}  </a>  </li>

@@ -239,7 +239,7 @@ class HomeController extends Controller
             // If it has a semicolon at the end, it's the end of the query
             if (substr(trim($line), -1, 1) == ';')
             {
-                // Perform the query
+                 // Perform the query
                 DB::statement($templine);
                 // Reset temp variable to empty
                 $templine = '';
@@ -249,5 +249,9 @@ class HomeController extends Controller
         DB::table('ads')->update(['created_at' => $now_time, 'updated_at' => $now_time]);
     }
 
+
+    public function landing(){
+        return view("theme.landing");
+    }
 
 }

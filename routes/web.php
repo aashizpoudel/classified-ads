@@ -17,6 +17,8 @@ Route::get('installation', ['as' => 'installation', 'uses'=>'HomeController@inst
 Route::post('installation', [ 'uses'=>'HomeController@installationPost']);
 
 Route::get('/', ['as' => 'home', 'uses'=>'HomeController@index']);
+Route::get('/home', ['as' => 'landing', 'uses'=>'HomeController@landing']);
+
 Route::get('LanguageSwitch/{lang}', ['as' => 'switch_language', 'uses'=>'HomeController@switchLang']);
 
 //Account activating
